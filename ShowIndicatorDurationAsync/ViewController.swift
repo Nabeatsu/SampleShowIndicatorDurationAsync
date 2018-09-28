@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         let alert = UIAlertController.showIndicatorAlert(viewController: self, message: "uploading")
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 7.0) {
-            alert.message = "もう少しで終わるよ"
+            alert.message = "Please wait a little bit"
             DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
                 alert.dismiss(animated: true, completion: nil)
             }
